@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/header";
+import { GeistSans } from "geist/font/sans";
+import { cn } from "@/lib/utils";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const gambarino = localFont({ src: "./Gambarino-Regular.woff2", variable: "--font-gambarino" });
+
+
+
+const inter = Inter({ subsets: ["latin"],variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +24,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <html lang="en">
+      <body className={cn(inter.className,GeistSans.variable,gambarino.variable)}>
+              <ThemeProvider
+                  attribute="class"
+                  defaultTheme="dark"
+                  enableSystem
+                  disableTransitionOnChange
+        >
+                  {children}
+              </ThemeProvider>
+          </body>
+      </html>
   );
 }
