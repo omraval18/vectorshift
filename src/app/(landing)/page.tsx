@@ -5,7 +5,7 @@ import { SparklesCore } from "@/components/sparkles";
 import { TextureButton } from "@/components/texture-button";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon, ArrowUpRight, Bot, BrainCircuit, ChevronsUpDown, Dot, MessageCircle, MoveUpRight, Play, PlayCircle, Workflow } from "lucide-react";
+import { ArrowRightIcon, ArrowUpRight, Bot, BrainCircuit, ChevronsUpDown, Dot, Facebook, FacebookIcon, MessageCircle, MoveUpRight, Play, PlayCircle, Workflow } from "lucide-react";
 import Image from "next/image";
 import FeatureGrid from "./_components/card-grid";
 import { IntegrationsBeam } from "./_components/integrations-beam";
@@ -22,6 +22,10 @@ import { StepCarousel } from "./_components/step-carousel";
 import { EnterpriseGrid } from "./_components/enterprise-grid";
 import AnimatedShinyText from "@/components/shiny-button";
 import { cn } from "@/lib/utils";
+import { FAQ } from "./_components/faq";
+import { FaLinkedin, FaXTwitter, FaFacebook } from "react-icons/fa6";
+
+import { LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 
 const code = `#This is from file pipeline.py
 
@@ -63,7 +67,7 @@ output_node = OutputNode(
 
 export default function Home() {
   return (
-      <main className="p-10 md:p-0 w-full flex flex-col items-center justify-center  ">
+      <main className="p-0 md:p-0 w-full flex flex-col items-center justify-center  ">
           <div className="md:py-20 relative mt-16 py-10 px-4 md:px-6 flex flex-col items-center gap-12 justify-center max-w-full md:max-w-5xl">
               <div className=" text-center flex flex-col items-center gap-4  font-gambarino">
                   <div className="flex  flex-col tracking-tight items-center gap-1 text-center font-base">
@@ -135,18 +139,18 @@ export default function Home() {
               </div>
           </div>
           {/*  */}
-          <div className=" mt-48 md:w-5/6 w-full bg-background">
-              <h1 className="text-5xl font-gambarino text-center leading-tight">
+          <div className=" mt-48 md:w-5/6 w-full bg-background px-4 md:px-0">
+              <h1 className=" text-3xl md:text-5xl font-gambarino text-center leading-tight">
                   An ecosystem to build, deploy,
                   <br /> and manage AI applications
               </h1>
-              <div className="bg-muted/40 p-5  md:p-10 w-full max-h-lg mt-12 border rounded-3xl">
-                  <div className="flex md:items-base gap-4 flex-wrap w-full">
+              <div className="bg-muted/40 p-5   md:p-10 w-full max-h-lg mt-12 border rounded-3xl">
+                  <div className="flex flex-col md:flex md:flex-row md:items-base gap-4 flex-wrap w-full items-center">
                       <div className="flex flex-col justify-start flex-[0.5] gap-4">
-                          <h2 className="font-gesit font-medium text-2xl w-full">
+                          <h2 className="font-gesit font-medium text-xl md:text-2xl w-full">
                               Empowering development with no-code and code SDK
                           </h2>
-                          <p className="font-geist text-neutral-400 text-base font-light">
+                          <p className="font-geist text-neutral-400 md:text-base text-sm font-light">
                               VectorShift combines a user-friendly No-code interface with a robust
                               Code SDK. Effortlessly create applications using drag-and-drop, or
                               dive into coding with seamless IDE integration. Enjoy flexibility and
@@ -177,7 +181,7 @@ export default function Home() {
                       </div>
                   </div>
               </div>
-              <div className="max-w-5xl mt-8 flex justify-center mx-auto">
+              <div className="max-w-5xl mt-8 flex  justify-center mx-auto">
                   <div className=" flex justify-center mx-auto">
                       <FeatureGrid />
                   </div>
@@ -412,6 +416,118 @@ export default function Home() {
                   </div>
               </WobbleCard>
           </div>
+          <div className="w-5/6 mb-24 mt-24 h-full flex flex-col gap-24 items-center">
+              <div>
+                  <h3 className="text-5xl font-gambarino text-center leading-tight ">
+                      Frequently Asked Questions
+                  </h3>
+              </div>
+              <FAQ />
+          </div>
+          <section className="relative mx-auto  bg-grid-large-white/[0.015] mt-16 max-w-full p-6 pb-12 pt-20 lg:px-8">
+              <div
+                  aria-hidden="true"
+                  className="user-select-none center pointer-events-none absolute -top-0.5 left-1/2 h-px w-4/5 max-w-[500px] -translate-x-1/2 -translate-y-1/2 transform-gpu [background:linear-gradient(90deg,rgba(0,0,0,0)_0%,#9333ea_50%,rgba(0,0,0,0)_100%)]"
+              ></div>
+              <div
+                  aria-hidden="true"
+                  className="user-select-none center pointer-events-none absolute -top-1 left-1/2 h-[200px] w-full max-w-[300px] -translate-x-1/2 -translate-y-1/2 transform-gpu [background:conic-gradient(from_90deg_at_50%_50%,#00000000_50%,#09090b_50%),radial-gradient(rgba(200,200,200,0.05)_0%,transparent_70%)] md:max-w-[600px]"
+              ></div>
+              <div className="relative isolate  ">
+                  {/* <svg
+                      className="absolute inset-0 -z-10 h-full w-full stroke-white/5 [mask-image:radial-gradient(40%_80%_at_center,black,transparent)]"
+                      aria-hidden="true"
+                  >
+                      <defs>
+                          <pattern
+                              id="cta"
+                              width="80"
+                              height="80"
+                              x="50%"
+                              y="-1"
+                              patternUnits="userSpaceOnUse"
+                          >
+                              <path d="M.5 200V.5H200" fill="none"></path>
+                          </pattern>
+                      </defs>
+                      <rect width="100%" height="100%" stroke-width="0" fill="url(#cta)"></rect>
+                  </svg> */}
+                  <div
+                      className="absolute inset-x-0 top-10 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
+                      aria-hidden="true"
+                  >
+                      <div
+                          className="aspect-[1108/632] w-[69.25rem] max-h-96  flex-none bg-gradient-to-r from-purple-500 to-indigo-800 opacity-20 overflow-hidden"
+                          style={{
+                              clipPath:
+                                  "polygon(77.5% 40.13%, 90% 10%, 100% 50%, 95% 80%, 92% 85%, 75% 65%, 61.26% 54.7%, 50% 54.7%, 47.24% 65.81%, 50% 85%, 26.16% 73.91%, 0.1% 100%, 1% 40.13%, 20% 48.75%, 60% 0.25%, 67.5% 32.63%)",
+                          }}
+                      ></div>
+                  </div>
+                  <div className="mx-auto max-w-xl text-center">
+                      <h2 className="text-5xl font-gambarino text-center leading-tight">
+                          Get Started Today
+                      </h2>
+
+                      <div className="mt-12 flex items-center justify-center">
+                          <Button
+                              className="group relative rounded-full p-px text-sm/6 text-zinc-400 duration-300 hover:text-zinc-100 hover:shadow-glow"
+                              data-state="closed"
+                              variant={"ghost"}
+                          >
+                              <span className="absolute inset-0 overflow-hidden rounded-full">
+                                  <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(147,51,234,0.6)_0%,rgba(147,51,234,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+                              </span>
+                              <div className="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10">
+                                  Get Started
+                              </div>
+                              <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-cyan-400/0 via-purple-400/90 to-cyan-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
+                          </Button>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <footer className="px-8 w-full">
+              <div className="w-full flex flex-col items-start gap-6 border-t py-8">
+                  <div className="flex w-full justify-between items-center">
+                      <div className="flex items-center gap-2 font-light text-sm font-geist tracking-tight text-stone-300 hover:*:text-stone-400 ">
+                          <p>© 2023 VectorShift Inc.</p>
+                          <span>
+                              <a href="/legal/privacy">Privacy Policy</a>
+                          </span>
+                          <span>
+                              <a href="/legal/terms">Terms of Use</a>
+                          </span>
+                      </div>
+                      <div className="flex items-center gap-4 *:text-lg *:text-stone-500 hover:*:text-stone-300">
+                          <FaXTwitter />
+                          <FaFacebook />
+                          <FaLinkedin />
+                      </div>
+                  </div>
+                  <div className="flex flex-col items-center gap-2">
+                      <div className="flex items-center gap-4 text-base font-geist tracking-tight text-stone-300 font-light hover:*:text-stone-400">
+                          <p className="text-sm font-geist text-stone-300 ">
+                              <a href="/legal/privacy">Docs</a>
+                          </p>
+                          <p className="text-sm font-geist text-stone-300 ">
+                              <a href="/legal/terms">Tutorials</a>
+                          </p>
+                          <p className="text-sm font-geist text-stone-300 ">
+                              <a href="/legal/terms">Blog</a>
+                          </p>
+                      </div>
+                      <div className="flex items-center gap-4 text-base font-geist tracking-tight text-stone-300 font-light hover:*:text-stone-400 ">
+                          <p className="text-sm font-geist text-stone-300 ">
+                              <a href="/legal/privacy">Discord</a>
+                          </p>
+                          <p className="text-sm font-geist text-stone-300 ">
+                              <a href="/legal/terms">Contact Us</a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </footer>
       </main>
   );
 }

@@ -154,6 +154,7 @@ const config = {
                             "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
                     },
                 },
+                
             },
             animation: {
                 "accordion-down": "accordion-down 0.2s ease-out",
