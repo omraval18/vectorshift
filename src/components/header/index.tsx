@@ -17,7 +17,7 @@ import Image from "next/image";
 export default function Header() {
     return (
         <div className="fixed z-40 top-0 left-0 right-0 flex justify-center mt-4 px-4 ">
-            <header className="w-full max-w-5xl flex items-center justify-between h-12 rounded-lg backdrop-blur-lg border-[1px] border-muted/40 bg-muted/20 px-4 md:px-6">
+            <header className="w-full max-w-5xl flex items-center justify-between h-12 rounded-lg backdrop-blur-3xl -webkit-backdrop-blur-lg border-[1px] border-muted/40 bg-muted/20 px-4 md:px-6">
                 <nav className="flex items-center md:justify-between w-full md:gap-10 gap-4">
                     <Link
                         href="#"
