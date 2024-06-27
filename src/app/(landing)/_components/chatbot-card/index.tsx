@@ -23,7 +23,7 @@ export default function ChatbotCard() {
                   width={500}
                   height={500}
                   alt="linear demo image"
-                  className="absolute scale-75 -right-10 md:-right-[40%] lg:-right-[20%] -bottom-24 md:-bottom-20object-contain rounded-t-lg"
+                  className="absolute scale-75 -right-10 md:-right-[40%] lg:-right-[20%] -bottom-28 md:-bottom-20 object-contain rounded-t-lg"
               />
           </WobbleCard>
       </div>

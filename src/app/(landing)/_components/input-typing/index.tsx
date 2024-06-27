@@ -3,7 +3,7 @@
 import { ReactNode } from "react";
 
 import { Typewriter } from "@/components/typing-animation";
-import { NeonGradientButton } from "@/components/neon-card";
+import { NeonGradientButton } from "@/components/neon-gradient-button";
 import { Button } from "@/components/ui/button";
 import ShimmerButton from "@/components/shimmer-button";
 import { ArrowUpRight } from "lucide-react";
