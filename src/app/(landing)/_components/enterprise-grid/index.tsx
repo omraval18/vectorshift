@@ -54,17 +54,15 @@ export default function EnterpriseGrid() {
                                 <h3 className="text-lg font-semibold text-balance font-bricolage  md:text-3xl">
                                     RFP and Proposal Generators
                                 </h3>
-                                <div className="mt-4 text-sm text-dark-muted text-pretty">
-                                    <p>{/* No description provided for this item */}</p>
-                                </div>
+                                
                             </div>
                             <img
-                                src="https://assets.basehub.com/9dbc0da9/lm_WcLH-Sl7j-L29zPZP1/diff-view.png?format=webp&quality=100"
+                                src="https://ik.imagekit.io/omraval18/01o3msbfjkBjbjMADOVLPRvRM_d9zcijruLm.png?updatedAt=1719512917727"
                                 alt=""
                                 width="1080"
                                 height="846"
                                 style={{ aspectRatio: "60/47" }}
-                                className="object-cover object-left min-w-full sm:min-w-[initial] w-[360px]"
+                                className="object-cover object-left border border-muted rounded-lg min-w-full sm:min-w-[initial] w-[360px]"
                             />
                         </div>
                     </div>
