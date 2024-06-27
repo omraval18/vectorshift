@@ -71,7 +71,7 @@ const SDKProcessCard = ({
     );
 };
 
-const MarqueeDemo = () => {
+const PipelineStepMarquee = () => {
     return (
         <div
             className={cn(
@@ -96,4 +96,4 @@ const MarqueeDemo = () => {
     );
 };
 
-export default MarqueeDemo;
+export default PipelineStepMarquee;

@@ -1,17 +1,6 @@
 import { BentoCard, BentoGrid } from "@/components/bento-grid";
-import {
-    BellIcon,
-    CalendarIcon,
-    ChatBubbleIcon,
-    DashboardIcon,
-    FileIcon,
-    FileTextIcon,
-    GlobeIcon,
-    InputIcon,
-    MagicWandIcon,
-    MixIcon,
-} from "@radix-ui/react-icons";
-import { BotMessageSquare, Code, FileSearch, Globe, Icon, Keyboard, Store } from "lucide-react";
+
+import { BotMessageSquare,  FileSearch,  Store } from "lucide-react";
 
 const features = [
     {
