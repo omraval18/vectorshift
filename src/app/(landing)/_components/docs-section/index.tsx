@@ -29,7 +29,7 @@ export default function DocsSection() {
                   </Button>
               </div>
 
-              <div className="md:absolute relative z-20 md:-right-4 -right-24 lg:-right-[10%]  -bottom-10 object-contain rounded-2xl">
+              <div className="md:absolute relative z-20 md:-right-4 -right-[40%] lg:-right-[10%]  -bottom-10 object-contain rounded-2xl">
                   <div className="mt-8 md:w-full md:h-full max-w-60 max-h-60 md:max-w-full md:max-h-full gap-0  md:block">
                       <div className="bg-black rounded-lg  w-full">
                           <div className="flex items-center w-full">
