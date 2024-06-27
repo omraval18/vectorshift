@@ -5,27 +5,22 @@ import { SparklesCore } from "@/components/sparkles";
 import { TextureButton } from "@/components/texture-button";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon, ArrowUpRight, Bot, BrainCircuit, ChevronsUpDown, Dot, Facebook, FacebookIcon, MessageCircle, MoveUpRight, Play, PlayCircle, Workflow } from "lucide-react";
+import {  ArrowUpRight, Bot, BrainCircuit, ChevronsUpDown, Dot,  MessageCircle, MoveUpRight, Play, PlayCircle, Workflow } from "lucide-react";
 import Image from "next/image";
 import FeatureGrid from "./_components/card-grid";
 import { IntegrationsBeam } from "./_components/integrations-beam";
 import { BentoCard } from "@/components/bento-grid";
-import RandomIconLayout from "./_components/icons-float";
 import IconsFloat from "./_components/icons-float";
 import { InputTyping } from "./_components/input-typing";
 import { WobbleCard } from "@/components/wobble-card";
 import WorkflowAutomationTabs from "./_components/workflow-automation-tabs";
-import { AnimatedFormatCard } from "@/components/animated-format-card";
-import { Orbit } from "next/font/google";
+
 import { OrbitingCirclesDemo } from "./_components/data-format-orbit";
 import { StepCarousel } from "./_components/step-carousel";
-import { EnterpriseGrid } from "./_components/enterprise-grid";
-import AnimatedShinyText from "@/components/shiny-button";
-import { cn } from "@/lib/utils";
 import { FAQ } from "./_components/faq";
 import { FaLinkedin, FaXTwitter, FaFacebook } from "react-icons/fa6";
 
-import { LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
+import Grid from "./_components/enterprise-grid-2";
 
 const code = `#This is from file pipeline.py
 
@@ -67,7 +62,7 @@ output_node = OutputNode(
 
 export default function Home() {
   return (
-      <main className="p-0 md:p-0 w-full flex flex-col items-center justify-center  ">
+      <main className="p-0 px-4 md:px-0 md:p-0 w-full flex flex-col items-center justify-center  ">
           <div className="md:py-20 relative mt-16 py-10 px-4 md:px-6 flex flex-col items-center gap-12 justify-center max-w-full md:max-w-5xl">
               <div className=" text-center flex flex-col items-center gap-4  font-gambarino">
                   <div className="flex  flex-col tracking-tight items-center gap-1 text-center font-base">
@@ -80,7 +75,7 @@ export default function Home() {
                           className=" text-3xl md:text-7xl font-semibold"
                       />
                   </div>
-                  <p className="text-neutral-500 font-light font-geist text-center text-sm md:text-base md:max-w-3xl">
+                  <p className="text-neutral-500 font-base font-geist text-center text-sm md:text-base md:max-w-3xl">
                       An integrated framework of no-code, low-code, and out of the box generative AI
                       solutions to build AI search engines, assistants, chatbots, and automations.{" "}
                   </p>
@@ -88,15 +83,15 @@ export default function Home() {
               <div className="relative flex z-10 items-center gap-4 md:w-full justify-center pb-10">
                   <Button
                       variant={"default"}
-                      className="rounded-full bg-violet-700 hover:bg-violet-800 text-white font-geist font-base text-normal "
+                      className="rounded-full bg-violet-700 hover:bg-violet-800 text-white  font-base text-normal "
                   >
-                      Get Started
+                      <p className="font-bricolage font-base text-normal ">Get Started</p>
                   </Button>
                   <Button
                       variant={"outline"}
                       className="rounded-full bg-muted/40 text-white font-geist font-base text-normal  "
                   >
-                      Talk to Us
+                      <p className="font-bricolage font-base text-normal ">Talk to Us</p>
                   </Button>
               </div>
           </div>
@@ -139,7 +134,7 @@ export default function Home() {
               </div>
           </div>
           {/*  */}
-          <div className=" mt-48 md:w-5/6 w-full bg-background px-4 md:px-0">
+          <div className=" mt-48 md:w-5/6 w-full bg-background md:px-0">
               <h1 className=" text-3xl md:text-5xl font-gambarino text-center leading-tight">
                   An ecosystem to build, deploy,
                   <br /> and manage AI applications
@@ -147,10 +142,10 @@ export default function Home() {
               <div className="bg-muted/40 p-5   md:p-10 w-full max-h-lg mt-12 border rounded-3xl">
                   <div className="flex flex-col md:flex md:flex-row md:items-base gap-4 flex-wrap w-full items-center">
                       <div className="flex flex-col justify-start flex-[0.5] gap-4">
-                          <h2 className="font-gesit font-medium text-xl md:text-2xl w-full">
+                          <h2 className="font-bricolage font-medium text-xl md:text-2xl w-full">
                               Empowering development with no-code and code SDK
                           </h2>
-                          <p className="font-geist text-neutral-400 md:text-base text-sm font-light">
+                          <p className="font-inter text-neutral-400 tracking-tight leading-normal md:text-base text-sm font-light">
                               VectorShift combines a user-friendly No-code interface with a robust
                               Code SDK. Effortlessly create applications using drag-and-drop, or
                               dive into coding with seamless IDE integration. Enjoy flexibility and
@@ -170,7 +165,7 @@ export default function Home() {
                                   <span className="size-3 mt-2 rounded-full bg-muted hover:bg-green-500 ease-in delay-75"></span>
                               </div>
                               <Badge
-                                  className="mt-2 text-xs font-geist font-medium text-neutral-200"
+                                  className="mt-2 text-xs font-inter tracking-tight font-medium text-neutral-200"
                                   variant={"secondary"}
                               >
                                   pipeline_setup.py
@@ -187,28 +182,28 @@ export default function Home() {
                   </div>
               </div>
           </div>
-          <div className="w-5/6 mt-48">
+          <div className="w-5/6 md:mt-48 mt-24 ">
               <div className="flex justify-center flex-col items-center gap-4">
-                  <h3 className="text-5xl font-gambarino text-center leading-tight">
+                  <h3 className="text-3xl md:text-5xl font-gambarino text-center leading-tight">
                       Everything you need.
                       <br /> Nothing you don’t
                   </h3>
-                  <p className="font-geist text-neutral-400 text-lg font-light max-w-4xl text-center">
+                  <p className="font-inter tracking-tight text-neutral-400 text-base md:text-lg font-light max-w-4xl text-center">
                       Live-sync, set up action based triggers (e.g., receive an email), and automate
                       actions (e.g., send a slack message) across your tool stack
                   </p>
               </div>
-              <div className="flex justify-center mt-8 max-w-5xl items-center gap-4 mb-24">
+              <div className="flex flex-col md:flex-row justify-center mt-8 max-w-5xl items-center gap-4 mb-24">
                   <BentoCard
                       name="Integrations and automations"
                       description="Live-sync, set up action based triggers (e.g., receive an email), and automate actions (e.g., send a slack message) across your tool stack"
                       background={
-                          <IntegrationsBeam className="absolute opacity-75 right-2 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
+                          <IntegrationsBeam className="absolute opacity-75 right-2 top-4 h-[300px] w-[600px]  border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
                       }
                       href="/"
                       cta="Learn more"
                       Icon={Workflow}
-                      className="flex-[0.5]"
+                      className="md:flex-[0.5] min-h-[28rem] min-w-[20rem] "
                   />
                   <BentoCard
                       name="Large language models"
@@ -217,15 +212,15 @@ export default function Home() {
                       href="/work/iot"
                       cta="Learn more"
                       Icon={BrainCircuit}
-                      className="flex-[0.5]"
+                      className="md:flex-[0.5] min-h-[28rem] min-w-[20rem]"
                   />
               </div>
           </div>
 
-          <div className="w-5/6  mt-48">
+          <div className="md:w-5/6 w-full  md:mt-48 mt-24">
               <div className="w-full">
                   <div className="flex w-full justify-center ">
-                      <h3 className="text-5xl font-gambarino text-center leading-tight">
+                      <h3 className="md:text-5xl text-3xl font-gambarino text-center leading-tight">
                           Leverage AI throughout your
                           <br />
                           company and products
@@ -238,19 +233,21 @@ export default function Home() {
                   <div className="flex flex-col items-center justify-around">
                       <div className="relative w-md p-2 rounded-xl mt-16 mx-8 bg-blue-600/40 border backdrop-blur-3xl">
                           <div className="bg-gradient-to-br w-full rounded-full h-full from-violet-700 via-blue-700 to-purple-500 absolute top-0 left-0 blur-3xl z-10"></div>
-                          <div className="relative w-full p-4 rounded-lg bg-blue-600 z-20">
+                          <div className="relative text-sm md:text-base w-full p-4 rounded-lg bg-blue-600 z-20">
                               Hey! How Can I Help You?
                           </div>
                       </div>
 
-                      <div className="text-4xl mt-12 sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8 flex flex-col">
+                      <div className="text-4xl mt-12 md:w-full max-w-xs md:max-w-full   md:relative z-20 py-8 flex flex-col">
                           <InputTyping />
                       </div>
                   </div>
-                  <div className="mb-8 w-full px-16 z-20 bg-gradient-to-r from-black/20 via-black/40 to-black/60  rounded-3xl bottom-0 flex flex-col items-start gap-2 ">
+                  <div className="mb-8 w-full md:px-16 px-8  z-20 bg-gradient-to-r from-black/20 via-black/40 to-black/60  rounded-3xl bottom-0 flex flex-col items-start gap-2 ">
                       {/* <Bot className="size-16 font-bold text-neutral-600/90" strokeWidth={1.5} /> */}
-                      <h2 className="font-geist font-medium text-3xl">Assistants</h2>
-                      <p className="text-md font-geist text-neutral-400 font-light">
+                      <h2 className="font-bricolage tracking-tight font-medium md:text-3xl text-2xl">
+                          Assistants
+                      </h2>
+                      <p className="md:text-md text-base font-inter tracking-tight leading-normal text-neutral-400 font-light">
                           Integrate natural language search and live-sync databases such as Notion
                           <br />
                           and Airtable to automate information retrieval.
@@ -266,58 +263,22 @@ export default function Home() {
                               alt=""
                               className="size-8"
                           />
-                          <div className="size-10 text-sm text-center font-medium flex justify-center items-center  p-4 rounded-md font-geist ">
+                          <div className="size-10 text-sm text-center font-medium flex justify-center items-center  p-4 rounded-md font-inter ">
                               +64
                           </div>
                       </div>
                   </div>
               </div>
           </div>
-          {/* <div className="relative border mb-24 w-5/6 h-[400px] overflow-hidden bg-black">
-              <div className="absolute z-10 pointer-events-none  h-full inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_5%,black)]"></div>
-
-              <div className="absolute z-0 inset-0 flex items-center justify-center">
-                  <div className=" w-[120%] h-[200%] transform rotate-[-12deg] skew-x-6 perspective-2000  ">
-                      <img
-                          src="https://ik.imagekit.io/omraval18/axRwBiy92gHkKFro5BhkJyMv2o_4l_qefwRe.png?updatedAt=1719315944592"
-                          alt="Timeline"
-                          className="w-full h-full object-cover mt-16"
-                      />
-                  </div>
-              </div>
-              <div className="relative z-20 inset-0 flex flex-col items-start justify-start p-8 text-white">
-                  <h2 className="text-2xl font-bold mb-2">Chatbot</h2>
-                  <p className="text-sm text-gray-300">
-                      Plan, manage, and track all product initiatives with Linear's visual planning
-                      tools.
-                  </p>
-              </div>
-          </div> */}
-
-          {/* <div className="w-5/6 mt-48 h-[42rem] mb-24 flex items-center justify-center">
-              <div className="flex flex-col gap-4 flex-[0.3]">
-                  <MessageCircle className="size-16 text-neutral-700" />
-                  <h3 className="text-5xl font-geist tracking-tight text-left leading-tight text-white">
-                      Chatbot
-                  </h3>
-                  <p className="max-w-lg font-geist font-normal text-neutral-400 text-left text-sm md:text-base md:max-w-xl">
-                      Prototype, customize, and deploy a customer facing chatbot in minutes. Use
-                      cases including customer support, onboarding flow, lead collection, and<br />
-                      white-glove advisory.
-                  </p>
-              </div>
-              <div className="w-full flex-[0.7] h-full mt-8 border-2 bg-muted/40  rounded-3xl p-2">
-                  <div className="w-full h-full bg-black/20 rounded-3xl border-2 border-muted/40 "></div>
-              </div>
-          </div> */}
-          <div className="w-5/6 mb-24 p-1 border-2 border-muted/60 rounded-3xl bg-violet-900/40">
-              <WobbleCard containerClassName="col-span-1 lg:col-span-3 rounded-3xl bg-violet-900 border-2 border-neutral-900/70 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+         
+          <div className="md:w-5/6 w-full  mb-24 p-1 border-2 border-muted/60 rounded-3xl bg-violet-900/40">
+              <WobbleCard containerClassName="col-span-1  min-h-[300px] lg:col-span-3 rounded-3xl bg-violet-900 border-2 border-neutral-900/70  lg:min-h-[600px] xl:min-h-[300px]">
                   <div className="max-w-sm  flex flex-col gap-8">
-                      <div className="flex flex-col gap-2">
-                          <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-3xl font-geist lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                      <div className="flex flex-col gap-2 pb-12">
+                          <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-3xl font-bricolage lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                               Chatbot
                           </h2>
-                          <p className=" max-w-[26rem] text-left font-geist text-base/6 text-neutral-200">
+                          <p className=" max-w-[26rem] text-left font-inter tracking-tight leading-normal text-sm  md:text-base/6 text-neutral-200">
                               Prototype, customize, and deploy a customer facing chatbot in minutes.
                               Use cases including customer support, onboarding flow, lead
                               collection, and white-glove advisory.
@@ -329,27 +290,29 @@ export default function Home() {
                       width={500}
                       height={500}
                       alt="linear demo image"
-                      className="absolute scale-75 -right-10 md:-right-[40%] lg:-right-[20%] -bottom-20 object-contain rounded-t-lg"
+                      className="absolute scale-75 -right-10 md:-right-[40%] lg:-right-[20%] -bottom-24 md:-bottom-20object-contain rounded-t-lg"
                   />
               </WobbleCard>
           </div>
-          <div className="w-5/6 flex flex-col  items-center justify-between gap-4 py-8">
-              <h3 className="text-3xl font-geist text-left font-semibold">Workflow Automation</h3>
-              <p className="text-lg font-normal text-center font-geist text-neutral-400 max-w-3xl">
+          <div className="md:w-5/6 flex flex-col  items-center justify-between gap-4 py-8">
+              <h3 className="text-3xl font-bricolage text-left md:text-center font-semibold">
+                  Workflow Automation
+              </h3>
+              <p className="text-lg font-normal tracking-tight leading-relaxed max-w-xs md:px-0 text-left md:text-center  font-geist text-neutral-400 md:max-w-3xl">
                   Automate the creation of marketing copy, personalized outbound emails, call
                   summaries, and graphics at scale.
               </p>
           </div>
-          <div className="w-5/6 mb-24 h-[28rem] overflow-hidden flex flex-col gap-8 p-1 rounded-3xl">
+          <div className="md:w-5/6 w-full mb-24 h-[28rem] overflow-hidden flex flex-col gap-8 md:p-1 p-0  rounded-3xl">
               <WorkflowAutomationTabs />
           </div>
 
-          <div className=" w-5/6 mb-24 h-full overflow-hidden flex flex-col items-center justify-center gap-8 p-1 rounded-3xl">
+          <div className=" md:w-5/6  w-full mb-24 h-full overflow-hidden flex flex-col items-center justify-center gap-8 p-1 rounded-3xl">
               <div className="flex flex-col gap-2 ">
                   <h3 className="text-5xl font-gambarino text-center leading-tight ">
                       Leverage AI across data of all formats
                   </h3>
-                  <p className="text-lg font-light text-center font-geist text-neutral-400 max-w-3xl">
+                  <p className="text-lg font-light text-center font-inter tracking-tight leading-relaxed text-neutral-400 max-w-3xl">
                       Summarize and answer questions about documents, videos, audio files, and
                       websites. Analyze and compare documents seamlessly.
                   </p>
@@ -366,35 +329,34 @@ export default function Home() {
               <StepCarousel />
           </div>
 
-          <div className="w-5/6 mb-24 h-screen flex flex-col gap-8 items-center">
-              <EnterpriseGrid />
+          <div className="md:w-5/6 w-full  flex flex-col gap-8 items-center">
+              <Grid/>
           </div>
-          <div className="w-5/6 mb-24 mt-24 h-full flex flex-col gap-8 items-center">
+          <div className="w-5/6 mb-24  h-full flex flex-col gap-8 items-center">
               <WobbleCard
-                  containerClassName="col-span-1 lg:col-span-2 h-full bg-black min-h-[500px] lg:min-h-[300px]"
-                  className=""
+                  containerClassName="col-span-1 relative lg:col-span-2 h-full md:bg-black bg-purple-900/40 min-h-[500px] lg:min-h-[300px]"
               >
-                  <div className="max-w-xs font-geist flex flex-col gap-8 ">
+                  <div className="max-w-xs  flex flex-col gap-8 ">
                       <div className="flex flex-col gap-2">
-                          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                          <h2 className="text-left font-bricolage text-balance text-xl md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                               VectorShift Docs
                           </h2>
-                          <p className=" text-left font-light  text-base/6 text-neutral-300">
+                          <p className=" text-left font-normal font-inter tracking-tight leading-normal text-base/6 text-neutral-300">
                               Unlock advanced features and detailed guides in our extensive
                               documentation.
                           </p>
                       </div>
                       <Button className="relative mt-2 max-w-52  inline-flex h-10 overflow-hidden rounded-xl p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                          <span className="inline-flex h-full gap-1 w-full cursor-pointer items-center justify-center rounded-xl bg-black font-geist tracking-tight px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                          <span className="inline-flex h-full gap-1 w-full cursor-pointer items-center justify-center rounded-xl bg-black font-bricolage tracking-tightr px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                               <p> Browse Documentation</p>
                               <ArrowUpRight className="size-4" />
                           </span>
                       </Button>
                   </div>
 
-                  <div className="absolute z-20 -right-4 lg:-right-[10%]  -bottom-10 object-contain rounded-2xl">
-                      <div className="mt-8 w-full h-full gap-0 hidden md:block">
+                  <div className="md:absolute relative z-20 md:-right-4 -right-10 lg:-right-[10%]  -bottom-10 object-contain rounded-2xl">
+                      <div className="mt-8 md:w-full md:h-full max-w-60 max-h-60 md:max-w-full md:max-h-full gap-0  md:block">
                           <div className="bg-black rounded-lg  w-full">
                               <div className="flex items-center w-full">
                                   <div className="flex  items-center px-4 gap-1">
@@ -403,7 +365,7 @@ export default function Home() {
                                       <span className="size-3 mt-2 rounded-full bg-muted hover:bg-green-500 ease-in delay-75"></span>
                                   </div>
                                   <Badge
-                                      className="mt-2 text-xs font-geist font-medium text-neutral-200"
+                                      className="mt-2 text-xs tracking-tight font-inter font-medium text-neutral-200"
                                       variant={"secondary"}
                                   >
                                       pipeline_setup.py
@@ -416,7 +378,7 @@ export default function Home() {
                   </div>
               </WobbleCard>
           </div>
-          <div className="w-5/6 mb-24 mt-24 h-full flex flex-col gap-24 items-center">
+          <div className="md:w-5/6 w-full mb-24 mt-24 h-full flex flex-col gap-24 items-center">
               <div>
                   <h3 className="text-5xl font-gambarino text-center leading-tight ">
                       Frequently Asked Questions
@@ -478,7 +440,7 @@ export default function Home() {
                               <span className="absolute inset-0 overflow-hidden rounded-full">
                                   <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(147,51,234,0.6)_0%,rgba(147,51,234,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
                               </span>
-                              <div className="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10">
+                              <div className="relative font-bricolage z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10">
                                   Get Started
                               </div>
                               <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-cyan-400/0 via-purple-400/90 to-cyan-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
@@ -488,14 +450,14 @@ export default function Home() {
               </div>
           </section>
           <footer className="px-8 w-full">
-              <div className="w-full flex flex-col items-start gap-6 border-t py-8">
+              <div className="w-full flex flex-col md:items-start items-center  gap-6 border-t py-8">
                   <div className="flex w-full justify-between items-center">
-                      <div className="flex items-center gap-2 font-light text-sm font-geist tracking-tight text-stone-300 hover:*:text-stone-400 ">
+                      <div className="flex items-center gap-2 font-normal text-sm font-bricolage tracking-tight text-stone-300 hover:*:text-stone-400 ">
                           <p>© 2023 VectorShift Inc.</p>
-                          <span>
+                          <span className="hidden md:block">
                               <a href="/legal/privacy">Privacy Policy</a>
                           </span>
-                          <span>
+                          <span className="hidden md:block">
                               <a href="/legal/terms">Terms of Use</a>
                           </span>
                       </div>
@@ -506,23 +468,29 @@ export default function Home() {
                       </div>
                   </div>
                   <div className="flex flex-col items-center gap-2">
-                      <div className="flex items-center gap-4 text-base font-geist tracking-tight text-stone-300 font-light hover:*:text-stone-400">
-                          <p className="text-sm font-geist text-stone-300 ">
+                      <div className="flex items-center gap-4 text-base font-bricolage tracking-tight text-stone-300 font-base hover:*:text-stone-400">
+                          <p className="text-sm  text-stone-300 ">
                               <a href="/legal/privacy">Docs</a>
                           </p>
-                          <p className="text-sm font-geist text-stone-300 ">
+                          <p className="text-sm  text-stone-300 ">
                               <a href="/legal/terms">Tutorials</a>
                           </p>
-                          <p className="text-sm font-geist text-stone-300 ">
+                          <p className="text-sm  text-stone-300 ">
                               <a href="/legal/terms">Blog</a>
                           </p>
+                          <p className="text-sm  md:hidden text-stone-300 ">
+                              <a href="/legal/terms">Terms of Use</a>
+                          </p>
                       </div>
-                      <div className="flex items-center gap-4 text-base font-geist tracking-tight text-stone-300 font-light hover:*:text-stone-400 ">
-                          <p className="text-sm font-geist text-stone-300 ">
+                      <div className="flex items-center gap-4 text-base font-bricolage tracking-tight text-stone-300 font-base hover:*:text-stone-400 ">
+                          <p className="text-sm  text-stone-300 ">
                               <a href="/legal/privacy">Discord</a>
                           </p>
-                          <p className="text-sm font-geist text-stone-300 ">
+                          <p className="text-sm  text-stone-300 ">
                               <a href="/legal/terms">Contact Us</a>
+                          </p>
+                          <p className="text-sm  md:hidden text-stone-300 ">
+                              <a href="/legal/terms">Privacy Policy</a>
                           </p>
                       </div>
                   </div>

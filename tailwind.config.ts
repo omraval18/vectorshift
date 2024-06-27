@@ -26,6 +26,7 @@ const config = {
                 geist: ["var(--font-geist-sans)"],
                 inter: ["var(--font-inter)"],
                 gambarino: ["var(--font-gambarino)"],
+                bricolage: ["var(--font-bricolage)"],
             },
             colors: {
                 border: "hsl(var(--border))",

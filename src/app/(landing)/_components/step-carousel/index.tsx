@@ -57,14 +57,14 @@ export function StepCarousel() {
                         <div className="p-1">
                             <Card className="bg-muted/30 ">
                                 <CardContent className="flex flex-col  aspect-square items-start justify-start px-6 py-8 gap-4">
-                                    <span className="text-2xl font-semibold font-geist">
+                                    <span className="text-2xl font-semibold font-bricolage">
                                         {index + 1}
                                     </span>
                                     <div className="flex flex-col gap-4 ">
-                                        <h6 className="text-2xl font-medium text-left font-geist tracking-tight">
+                                        <h6 className="text-2xl font-medium text-left font-bricolage tracking-tight">
                                             {step.title}
                                         </h6>
-                                        <p className="text-sm text-white/40 max-w-sm font-normal tracking-wide font-geist text-left">
+                                        <p className="text-sm text-white/40 max-w-sm font-normal tracking-wide font-inter text-left">
                                             {step.description}
                                         </p>
                                     </div>
@@ -76,8 +76,8 @@ export function StepCarousel() {
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
-            <div className="pointer-events-none absolute z-0 inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-            <div className="pointer-events-none absolute z-0 inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+            <div className="pointer-events-none absolute z-0 inset-y-0 left-0 md:w-1/3 w-1/4 bg-gradient-to-r from-white dark:from-background"></div>
+            <div className="pointer-events-none absolute z-0 inset-y-0 right-0 md:w-1/3 w-1/4 bg-gradient-to-l from-white dark:from-background"></div>
         </Carousel>
     );
 }

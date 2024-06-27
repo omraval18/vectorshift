@@ -27,7 +27,7 @@ const features = [
 
 const WorkflowAutomationTabs = () => {
     return (
-        <div className="flex h-full text-white p-8 mb-8 rounded-lg">
+        <div className="flex h-full text-white md:p-8 py-8 mb-8 rounded-lg">
             <Tabs
                 className="w-full h-full flex flex-wrap md:flex-nowrap items-center justify-between"
                 defaultValue="outbound"
@@ -46,13 +46,13 @@ const WorkflowAutomationTabs = () => {
                             value={feature.id}
                         >
                             <span className="h-5 w-1 rounded-full bg-neutral-700 transition-colors group-data-[state=active]:bg-purple-600"></span>
-                            <h6 className="text-lg font-base font-geist tracking-tight">
+                            <h6 className="text-lg font-base font-bricolage tracking-tight">
                                 {feature.title}
                             </h6>
                         </TabsTrigger>
                     ))}
                 </TabsList>
-                <div className=" w-full p-6 border rounded-lg bg-muted/40 ">
+                <div className=" mt-8 md:mt-0 w-full p-6 border rounded-lg bg-muted/40 ">
                     {features.map((feature) => (
                         <TabsContent
                             key={feature.id}

@@ -87,11 +87,11 @@ export function FAQ() {
         <Accordion type="single" collapsible className="w-full">
             {faqData.map((item, index) => (
                 <AccordionItem key={index} value={`item-${index + 1}`}>
-                    <AccordionTrigger className="font-geist tracking-tight text-2xl hover:no-underline font-normal text-stone-200">
+                    <AccordionTrigger className="font-bricolage tracking-wider text-xl hover:no-underline text-left font-normal text-stone-300">
                         {item.question}
                     </AccordionTrigger>
                     <AccordionContent>
-                        <span className="font-light text-neutral-400 text-lg font-geist text-left leading-relaxed tracking-tight">
+                        <span className="font-light text-neutral-400 text-md font-inter text-left leading-relaxed tracking-tight">
                             {item.answer}
                         </span>
                     </AccordionContent>

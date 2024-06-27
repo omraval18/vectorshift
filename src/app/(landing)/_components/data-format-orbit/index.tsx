@@ -5,9 +5,9 @@ import { File, Folder, Globe, Link, Sheet, Speaker, Video } from "lucide-react";
 
 export function OrbitingCirclesDemo() {
     return (
-        <div className="relative flex h-[500px] bg-muted/40 w-5/6 items-center justify-center overflow-hidden rounded-3xl border  md:shadow-xl">
+        <div className="relative flex h-[500px] bg-muted/40 md:w-5/6 w-full items-center justify-center overflow-hidden rounded-3xl border  md:shadow-xl">
             <WordRotate
-                className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-violet-400 font-geist"
+                className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-violet-400 font-bricolage"
                 words={["Website", "PDF", "Documents", "Video", "Audio", "Tables"]}
             />
 

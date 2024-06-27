@@ -33,7 +33,7 @@ export default function Header() {
                         />
                         <span className="text-xs md:text-sm font-medium">VectorShift</span>
                     </Link>
-                    <div className="hidden md:flex items-center gap-4 text-sm font-normal md:text-sm">
+                    <div className="hidden md:flex font-bricolage items-center gap-4 text-sm font-normal md:text-sm">
                         <Link
                             href="#"
                             className="text-muted-foreground transition-colors hover:text-foreground"
@@ -69,12 +69,12 @@ export default function Header() {
                         <Button
                             variant="outline"
                             size="xs"
-                            className="rounded-full bg-muted/40 text-xs"
+                            className="rounded-full bg-muted hover:bg-muted/80 text-xs font-bricolage"
                         >
                             Login
                         </Button>
                         <ShimmerButton className="shadow-2xl">
-                            <span className="whitespace-pre-wrap text-center text-xs font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-xs">
+                            <span className="whitespace-pre-wrap font-bricolage text-center text-xs font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-xs">
                                 Get Started
                             </span>
                         </ShimmerButton>
