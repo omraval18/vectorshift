@@ -8,7 +8,7 @@ import React from 'react'
 
 export default function DocsSection() {
   return (
-      <div className="w-5/6 mb-24  h-full flex flex-col gap-8 items-center">
+      <div className="md:w-5/6 w-full mb-24  h-full flex flex-col gap-8 items-center">
           <WobbleCard containerClassName="col-span-1 relative lg:col-span-2 h-full md:bg-black bg-purple-900/40 min-h-[500px] lg:min-h-[300px]">
               <div className="max-w-xs  flex flex-col gap-8 ">
                   <div className="flex flex-col gap-2">
@@ -29,7 +29,7 @@ export default function DocsSection() {
                   </Button>
               </div>
 
-              <div className="md:absolute relative z-20 md:-right-4 -right-10 lg:-right-[10%]  -bottom-10 object-contain rounded-2xl">
+              <div className="md:absolute relative z-20 md:-right-4 -right-24 lg:-right-[10%]  -bottom-10 object-contain rounded-2xl">
                   <div className="mt-8 md:w-full md:h-full max-w-60 max-h-60 md:max-w-full md:max-h-full gap-0  md:block">
                       <div className="bg-black rounded-lg  w-full">
                           <div className="flex items-center w-full">
