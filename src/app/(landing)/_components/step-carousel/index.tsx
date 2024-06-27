@@ -53,10 +53,10 @@ export function StepCarousel() {
         >
             <CarouselContent className="-ml-1">
                 {steps.map((step, index) => (
-                    <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem key={index} className="pl-1  md:basis-1/2 lg:basis-1/3">
                         <div className="p-1">
-                            <Card className="bg-muted/30 ">
-                                <CardContent className="flex flex-col  aspect-square items-start justify-start px-6 py-8 gap-4">
+                            <Card className="bg-muted/30     ">
+                                <CardContent className="flex flex-col  aspect-square items-start justify-start px-6 py-4 md:py-8 md:gap-4 gap-2">
                                     <span className="text-2xl font-semibold font-bricolage">
                                         {index + 1}
                                     </span>
